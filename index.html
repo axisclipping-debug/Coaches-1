@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  body{margin:0;background:#0F0F10;color:#F2EFE9;font-family:'Archivo',sans-serif;line-height:1.5;}
+  a{color:#C6A15A;text-decoration:none;}
+  a:hover{color:#D9BA7B;}
+  ::selection{background:#C6A15A;color:#141414;}
+  body{padding-bottom:78px;}
+  @media (max-width:760px){ .axis-topbar-contact{ display:none !important; } .axis-sticky-sub{ display:none !important; } }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="background:#0F0F10;color:#F2EFE9;overflow-x:hidden;">
+
+  <!-- ===================== TOP UTILITY BAR ===================== -->
+  <div style="border-bottom:1px solid rgba(255,255,255,0.07);padding:0.9rem 24px;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+      <div style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:1.15rem;letter-spacing:0.01em;">Axis<span style="color:#C6A15A;"> Growth Systems</span></div>
+      <div class="axis-topbar-contact" style="font-family:'Archivo',sans-serif;font-size:0.85rem;color:#A5A199;">Questions? <a href="mailto:hello@axisgrowthsystems.com">swapnil@axisgrowthsystems.com</a> &nbsp;·&nbsp; Book: <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener">free audit</a></div>
+    </div>
+  </div>
+
+  <!-- ===================== ANNOUNCEMENT RIBBON ===================== -->
+  <sc-if value="{{ showAnnouncementBar }}" hint-placeholder-val="{{ true }}">
+  <div style="background:linear-gradient(90deg,#8A6A24 0%,#C6A15A 45%,#E4C983 100%);padding:0.7rem 24px;text-align:center;">
+    <div style="max-width:1100px;margin:0 auto;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(0.8rem,1.7vw,0.98rem);color:#141414;line-height:1.35;">One coach per niche · <strong>3 niches currently open.</strong> When your space is claimed, it closes&nbsp; no countdown clocks, no fake timers.</div>
+  </div>
+  </sc-if>
+
+  <!-- ===================== HERO ===================== -->
+  <section style="padding:clamp(64px,10vh,110px) 24px clamp(40px,6vh,64px);position:relative;text-align:center;">
+    <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1100px,94vw);height:560px;background:radial-gradient(55% 60% at 50% 0%, rgba(198,161,90,0.12), transparent 70%);pointer-events:none;"></div>
+    <div style="max-width:960px;margin:0 auto;position:relative;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(0.9rem,1.9vw,1.1rem);color:#C6A15A;">You have an offer worth scaling. Referrals alone won't do it.</div>
+      <h1 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.02;letter-spacing:-0.02em;margin:1.2rem auto 0;max-width:16ch;text-wrap:balance;">Turn your expertise into <span style="color:#C6A15A;font-style:italic;">a calendar of qualified calls.</span></h1>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.08rem,2.2vw,1.4rem);line-height:1.5;color:#B9B5AC;margin:1.5rem auto 0;max-width:44ch;">The done-for-you Meta ads system that books calls with coaching clients&nbsp; live inside 30 days.</p>
+
+      <!-- anchor line (adapts their price-anchor visual) -->
+      <div data-reveal="" style="display:flex;align-items:center;justify-content:center;gap:0.9rem;flex-wrap:wrap;margin:2rem auto 0;font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(1.05rem,2.2vw,1.4rem);">
+        <span style="color:#6C695F;text-decoration:line-through;text-decoration-color:rgba(198,161,90,0.6);">Referral roulette</span>
+        <span style="color:#C6A15A;font-size:1.3em;line-height:1;">→</span>
+        <span style="color:#F2EFE9;">Predictable booked calls</span>
+        <span style="font-weight:300;color:#8C887F;">— managed for you.</span>
+      </div>
+
+      <div data-reveal="" style="margin-top:2rem;">
+        <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.6rem;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:clamp(1.05rem,2.2vw,1.3rem);letter-spacing:0.005em;padding:1.15rem 2.6rem;border-radius:10px;text-decoration:none;box-shadow:0 16px 46px -12px rgba(198,161,90,0.6);transition:transform .25s ease,box-shadow .25s ease;" style-hover="transform:translateY(-2px);box-shadow:0 22px 56px -12px rgba(198,161,90,0.75);">Book Your Free Audit<span style="font-size:1.05em;transform:translateY(-1px);">→</span></a>
+        <div style="font-family:'Archivo',sans-serif;font-size:0.9rem;color:#8C887F;margin-top:0.9rem;">Free audit · no commitment · we'll tell you if your niche is still open.</div>
+      </div>
+    </div>
+
+    <!-- VSL CIRCLE -->
+    <div data-reveal="" style="margin:clamp(48px,7vh,80px) auto 0;max-width:520px;position:relative;">
+      <div style="width:14px;height:26px;background:#C6A15A;border-radius:20px;margin:0 auto 1.4rem;box-shadow:0 0 30px rgba(198,161,90,0.6);"></div>
+      <div style="position:relative;width:clamp(240px,52vw,360px);aspect-ratio:1;margin:0 auto;border-radius:50%;overflow:hidden;background:#000;box-shadow:0 40px 90px -30px rgba(0,0,0,0.85), 0 0 0 1px rgba(255,255,255,0.06);">
+        <sc-if value="{{ vslPlaying }}" hint-placeholder-val="{{ false }}">
+          <iframe src="https://drive.google.com/file/d/1B9U3Rpi5zo96J_dzzTEJlyS80RctuG5I/preview" allow="autoplay; fullscreen" allowfullscreen="true" style="width:100%;height:100%;border:0;display:block;"></iframe>
+        </sc-if>
+        <sc-if value="{{ vslNotPlaying }}" hint-placeholder-val="{{ true }}">
+          <div onClick="{{ playVsl }}" style="position:absolute;inset:0;cursor:pointer;">
+            <img src="./assets/hero-vsl-thumb-sm.jpeg" alt="Axis Growth Systems VSL" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+              <div style="width:74px;height:74px;border-radius:50%;background:rgba(198,161,90,0.92);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px -8px rgba(198,161,90,0.7);">
+                <div style="width:0;height:0;border-top:13px solid transparent;border-bottom:13px solid transparent;border-left:22px solid #141414;margin-left:5px;"></div>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <p style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1rem,2vw,1.2rem);color:#B9B5AC;margin:1.6rem auto 0;max-width:34ch;">Press play&nbsp; see how coaches get booked calls without chasing referrals.</p>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT IS AXIS — two-column w/ sticky offer card ===================== -->
+  <section style="padding:clamp(56px,8vh,96px) 24px;border-top:1px solid rgba(255,255,255,0.06);">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:clamp(40px,5vw,72px);align-items:start;">
+
+      <!-- LEFT: long body copy -->
+      <div>
+        <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">◆ What is Axis?</div>
+        <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(1.9rem,4vw,3rem);line-height:1.08;letter-spacing:-0.015em;margin:1rem 0 0;text-wrap:balance;">You bring the offer. We bring the booked calls.</h2>
+        <div style="font-family:'Archivo',sans-serif;font-size:clamp(1.02rem,1.5vw,1.15rem);line-height:1.7;color:#CFCBC2;margin-top:1.6rem;display:flex;flex-direction:column;gap:1.2rem;">
+          <p data-reveal="" style="margin:0;">Axis is a <strong style="color: rgb(242, 239, 233);">done-for-you Meta ads system</strong> built for business coaches and consultants doing $5K+/mo. Whether you're tired of referral roulette or you've been burned by an agency before&nbsp;&nbsp;<em style="color: rgb(198, 161, 90); font-style: italic;">this is for you.</em></p>
+          <p data-reveal="" style="margin:0;">We run the whole thing: <a href="#" style="text-decoration: underline rgba(198, 161, 90, 0.5);">researching your market</a>, building creative that fits your voice, testing the offer, and putting qualified prospects on your calendar&nbsp; so the ads do the selling and calls come in without you chasing anyone.</p>
+          <p data-reveal="" style="margin:0;">It runs on one rule that changes everything downstream: <strong style="color: rgb(242, 239, 233);">one coach per niche, per market.</strong> No shared audiences, no recycled hooks, no competitor funding their testing with your spend. Your account is yours alone&nbsp; because we don't take a competitor in your space.</p>
+          <p data-reveal="" style="margin:0;">We've run it across coaching offers, consultants, and service niches and watched the same thing happen: <strong style="color:#F2EFE9;">a pipeline that finally turns attention into booked calls.</strong> <span style="color:#8C887F;">(Individual results vary and are not typical.)</span></p>
+          <p data-reveal="" style="margin:0;">And the best part? Your campaign is <strong style="color: rgb(242, 239, 233);">live in 30 days</strong>, with first booked calls landing inside 30 days of launch.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: sticky offer card -->
+      <div data-reveal="" style="position:sticky;top:24px;border-radius:16px;overflow:hidden;border:1px solid rgba(198,161,90,0.25);box-shadow:0 40px 90px -34px rgba(0,0,0,0.85);background:#131316;">
+        <div style="background:linear-gradient(90deg,#8A6A24,#C6A15A,#E4C983);padding:0.85rem 1.4rem;text-align:center;font-family:'Archivo',sans-serif;font-weight:700;font-size:0.86rem;letter-spacing:0.05em;color:#141414;">↓ THE COMPLETE SYSTEM — NICHE EXCLUSIVE</div>
+        <div style="background:#17171A;padding:0.6rem 1.4rem;text-align:center;font-family:'Archivo',sans-serif;font-weight:600;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#C6A15A;border-bottom:1px solid rgba(255,255,255,0.06);">Only 3 niches currently open</div>
+        <div style="padding:1.6rem 1.6rem 1.9rem;">
+          <div style="position:relative;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
+            <img src="./assets/dashboard-offer-sm.jpeg" alt="Client Meta Ads performance dashboard" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;">
+          </div>
+          <div style="display:inline-block;margin-top:1.3rem;font-family:'Archivo',sans-serif;font-weight:600;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#C6A15A;border:1px solid rgba(198,161,90,0.4);border-radius:999px;padding:0.4rem 0.9rem;">Full management · exclusivity included</div>
+          <div style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(1.5rem,3vw,2rem);line-height:1.1;margin-top:1rem;text-wrap:balance;">Your niche. Your calls. <span style="color:#C6A15A;">Nobody else's.</span></div>
+          <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:0.55rem;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:1.08rem;padding:1.05rem 1.4rem;border-radius:10px;text-decoration:none;margin-top:1.3rem;box-shadow:0 14px 40px -12px rgba(198,161,90,0.55);transition:transform .25s ease;" style-hover="transform:translateY(-2px);">Book Your Free Audit →</a>
+          <div style="display:flex;align-items:center;gap:0.6rem;justify-content:center;font-family:'Archivo',sans-serif;font-size:0.86rem;color:#A5A199;margin-top:0.95rem;"><span style="color:#C6A15A;">🛡</span> First booked call in 15 days — or we work free until you get one.</div>
+          <div style="margin-top:1.4rem;border-top:1px solid rgba(255,255,255,0.08);padding-top:1.2rem;display:flex;flex-direction:column;gap:0.7rem;">
+            <sc-for list="{{ cardChecklist }}" as="c" hint-placeholder-count="5">
+              <div style="display:flex;gap:0.7rem;align-items:flex-start;font-family:'Archivo',sans-serif;font-size:0.95rem;color:#CFCBC2;line-height:1.4;"><span style="color:#7FB77E;flex:0 0 auto;">✓</span><span>{{ c }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEM ===================== -->
+  <section style="background:#131316;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:820px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">The problem</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1.1rem 0 0;text-wrap:balance;">Here's the math nobody explains.</h2>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.08rem,2vw,1.32rem);line-height:1.65;color:#CFCBC2;margin:1.8rem 0 0;">When an agency runs five coaches in one niche, your spend isn't buying leads&nbsp;&nbsp;<span style="color: rgb(198, 161, 90); font-weight: 500;">it's funding their testing.</span> The hook you paid to discover gets recycled for the coach next door. Your audience data sharpens campaigns you're competing against.</p>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.08rem,2vw,1.32rem);line-height:1.65;color:#CFCBC2;margin:1.4rem 0 0;">That's why most coaches run ads for 60 days, get a trickle of unqualified calls, and quit&nbsp; convinced ads don't work for them. The ads worked. The model was rigged against you.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MECHANISM ===================== -->
+  <section style="padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:1080px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">The mechanism</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1.1rem 0 0;max-width:22ch;text-wrap:balance;">One coach per niche. Per market. That's the whole model.</h2>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.05rem,2vw,1.28rem);line-height:1.65;color:#B9B5AC;margin:1.6rem 0 0;max-width:64ch;">No shared audiences. No recycled creative. No clients competing for the same eyeballs with the same hooks. Your account is yours alone&nbsp; because we don't take a competitor in your space. Once your niche is claimed, it's closed.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:clamp(40px,5vh,64px);">
+        <sc-for list="{{ mechanismPoints }}" as="p" hint-placeholder-count="4">
+          <div data-reveal="" style="background:#17171A;border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.7rem;">
+            <div style="font-family:'Bodoni Moda',serif;font-size:1.6rem;color:#C6A15A;">{{ p.num }}</div>
+            <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:1.18rem;color:#F2EFE9;margin-top:0.9rem;">{{ p.title }}</div>
+            <div style="font-family:'Archivo',sans-serif;font-weight:300;font-size:0.98rem;line-height:1.55;color:#A5A199;margin-top:0.5rem;">{{ p.desc }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTRAST: typical agency vs Axis ===================== -->
+  <section style="background:#131316;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:1120px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">◆ The Axis model</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1rem 0 0;text-wrap:balance;">This is nothing like a typical agency.</h2>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.05rem,2vw,1.28rem);line-height:1.6;color:#B9B5AC;margin:1.1rem 0 0;">Quickest way to explain it is everything we <span style="color:#C6A15A;font-weight:600;">don't</span> do:</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.2rem;margin-top:clamp(36px,5vh,56px);">
+        <div data-reveal="" style="background:rgba(200,70,70,0.05);border:1px solid rgba(200,70,70,0.22);border-radius:16px;padding:clamp(1.6rem,3vw,2.2rem);">
+          <div style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:1.35rem;color:#D98A82;">A typical agency…</div>
+          <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.05rem;">
+            <sc-for list="{{ contrastBad }}" as="row" hint-placeholder-count="5">
+              <div style="display:flex;gap:0.85rem;align-items:flex-start;font-family:'Archivo',sans-serif;font-size:1.02rem;line-height:1.5;color:#CFCBC2;"><span style="flex:0 0 auto;color:#D9736B;margin-top:1px;">✕</span><span>{{ row }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+        <div data-reveal="" style="background:rgba(120,180,120,0.05);border:1px solid rgba(140,190,120,0.25);border-radius:16px;padding:clamp(1.6rem,3vw,2.2rem);">
+          <div style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:1.35rem;color:#8FCF8A;">Axis, instead…</div>
+          <div style="margin-top:1.3rem;display:flex;flex-direction:column;gap:1.05rem;">
+            <sc-for list="{{ contrastGood }}" as="row" hint-placeholder-count="5">
+              <div style="display:flex;gap:0.85rem;align-items:flex-start;font-family:'Archivo',sans-serif;font-size:1.02rem;line-height:1.5;color:#E8E4DB;"><span style="flex:0 0 auto;color:#7FB77E;margin-top:1px;">✓</span><span>{{ row }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFFER STACK ===================== -->
+  <section style="background:#131316;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:860px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">What you get</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1.1rem 0 0;text-wrap:balance;">What you actually get.</h2>
+      <div style="margin-top:clamp(32px,4vh,48px);border-top:1px solid rgba(255,255,255,0.08);">
+        <sc-for list="{{ offerItems }}" as="item" hint-placeholder-count="5">
+          <div data-reveal="" style="display:flex;gap:1.1rem;align-items:flex-start;padding:1.55rem 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+            <div style="flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:rgba(198,161,90,0.14);border:1px solid rgba(198,161,90,0.4);display:flex;align-items:center;justify-content:center;color:#C6A15A;font-size:1rem;margin-top:2px;">✓</div>
+            <div>
+              <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:clamp(1.12rem,2.4vw,1.38rem);color:#F2EFE9;">{{ item.title }}</div>
+              <div style="font-family:'Archivo',sans-serif;font-weight:300;color:#A5A199;font-size:1rem;line-height:1.55;margin-top:0.35rem;max-width:60ch;">{{ item.desc }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div data-reveal="" style="margin-top:2.6rem;">
+        <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.6rem;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:1.02rem;padding:1.05rem 2.1rem;border-radius:10px;text-decoration:none;box-shadow:0 14px 40px -12px rgba(198,161,90,0.55);transition:transform .25s ease;" style-hover="transform:translateY(-2px);">Book Your Free Audit<span style="font-size:1.1rem;transform:translateY(-1px);">→</span></a>
+      </div>
+      <div data-reveal="" style="margin-top:clamp(40px,5vh,60px);border-top:1px solid rgba(255,255,255,0.08);padding-top:1.8rem;">
+        <div style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;color:#8C887F;font-weight:500;">Who this isn't for</div>
+        <p style="font-family:'Archivo',sans-serif;font-weight:300;font-size:1.02rem;line-height:1.6;color:#A5A199;margin:0.7rem 0 0;max-width:62ch;">Not for brand-new coaches without a proven offer, anyone chasing the cheapest possible retainer, or businesses that can't take booked calls. We take <span style="color: rgb(242, 239, 233);">one coach per niche</span>&nbsp;so we're selective about who that one is.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOUNDER STORY ===================== -->
+  <section style="padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(36px,5vw,64px);align-items:center;">
+      <div data-reveal="" style="order:2;">
+        <div style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">◆ Why I built Axis</div>
+        <h2 style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(1.9rem,4vw,3rem);line-height:1.1;letter-spacing:-0.015em;margin:1rem 0 0;text-wrap:balance;">I got tired of watching good coaches blame themselves.</h2>
+        <div style="font-family:'Archivo',sans-serif;font-size:clamp(1.02rem,1.5vw,1.15rem);line-height:1.7;color:#CFCBC2;margin-top:1.4rem;display:flex;flex-direction:column;gap:1.1rem;">
+          <p style="margin:0;">Before Axis, we ran ads inside agencies that stacked five coaches into the same niche and called it a roster. I watched clients quietly fund each other's testing, blame themselves when the calls dried up, and walk away convinced ads didn't work for them.</p>
+          <p style="margin:0;">The ads worked fine. The <strong style="color: rgb(242, 239, 233);">model</strong> was the problem. So I built one that only works one way: <strong style="color: rgb(242, 239, 233);">one coach per niche, per market</strong>&nbsp; no shared audiences, no recycled hooks, no competitor riding on your spend.</p>
+          <p style="margin:0;">That single rule is the whole business. It's why I can put a booked-call guarantee behind the work, and why your niche closes the moment you claim it.</p>
+        </div>
+        <div style="margin-top:1.6rem;font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.15rem;color:#C6A15A;">— Axis Growth Systems</div>
+      </div>
+      <div data-reveal="" style="order:1;display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:460px;margin:0 auto;width:100%;">
+        <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 40px 90px -34px rgba(0,0,0,0.85);">
+          <img src="./assets/founder-left-sm.jpeg" alt="Axis founder" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div style="position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 40px 90px -34px rgba(0,0,0,0.85);">
+          <img src="./assets/founder-right-sm.jpeg" alt="Axis founder" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROOF (EMPTY SLOTS) ===================== -->
+  <section style="padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:1080px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">Proof</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1.1rem 0 0;text-wrap:balance;">Real coaches. Real results.</h2>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:1.02rem;line-height:1.6;color:#A5A199;margin:1.1rem 0 0;max-width:60ch;">A handful of the coaches and founders we've run exclusive campaigns for — and the numbers we pulled for them.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;margin-top:clamp(40px,5vh,60px);">
+        <div data-reveal="" style="border:1px solid rgba(198,161,90,0.35);border-radius:12px;padding:2rem 1.5rem;text-align:center;background:rgba(198,161,90,0.05);">
+          <div style="font-family:'Bodoni Moda',serif;font-size:2.8rem;line-height:1;color:#C6A15A;">4.3x</div>
+          <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;letter-spacing:0.04em;color:#A5A199;margin-top:0.7rem;">Average return on ad spend</div>
+        </div>
+        <div data-reveal="" style="border:1px solid rgba(198,161,90,0.35);border-radius:12px;padding:2rem 1.5rem;text-align:center;background:rgba(198,161,90,0.05);">
+          <div style="font-family:'Bodoni Moda',serif;font-size:2.8rem;line-height:1;color:#C6A15A;">$1.5M+</div>
+          <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;letter-spacing:0.04em;color:#A5A199;margin-top:0.7rem;">Revenue tracked for clients</div>
+        </div>
+        <div data-reveal="" style="border:1px solid rgba(198,161,90,0.35);border-radius:12px;padding:2rem 1.5rem;text-align:center;background:rgba(198,161,90,0.05);">
+          <div style="font-family:'Bodoni Moda',serif;font-size:2.8rem;line-height:1;color:#C6A15A;">49k</div>
+          <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;letter-spacing:0.04em;color:#A5A199;margin-top:0.7rem;">Qualified clicks driven</div>
+        </div>
+      </div>
+
+      <div data-reveal="" style="margin-top:1.2rem;position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 40px 90px -40px rgba(0,0,0,0.85);">
+        <img src="./assets/dashboard-sm.jpeg" alt="Meta Ads performance dashboard — client results" loading="lazy" decoding="async" style="width:100%;display:block;">
+        <div style="position:absolute;top:14px;left:14px;font-family:'Archivo',sans-serif;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:#0F0F10;background:#C6A15A;padding:0.3rem 0.7rem;border-radius:20px;font-weight:600;">Live client dashboard</div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem;margin-top:1.2rem;">
+        <div data-reveal="" style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.8rem;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;background:#131316;">
+          <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.15rem;line-height:1.55;color:#E4E0D8;">"Axis got us to 4.3x ROAS inside eight weeks. My calendar went from dead to booked solid — I've never had a pipeline this predictable."</div>
+          <div style="display:flex;align-items:center;gap:0.85rem;margin-top:1.6rem;">
+            <div style="width:48px;height:48px;flex:0 0 auto;border-radius:50%;overflow:hidden;"><img src="./assets/client-1-sm.jpeg" alt="Marcus Bell" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;color:#A5A199;"><strong style="color:#F2EFE9;">Marcus Bell</strong><br>Fitness Coaching</div>
+          </div>
+        </div>
+        <div data-reveal="" style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.8rem;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;background:#131316;">
+          <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.15rem;line-height:1.55;color:#E4E0D8;">"The one-coach-per-niche model is the real deal. Nobody in my space is riding my ad spend, and the booked calls started landing in the first two weeks."</div>
+          <div style="display:flex;align-items:center;gap:0.85rem;margin-top:1.6rem;">
+            <div style="width:48px;height:48px;flex:0 0 auto;border-radius:50%;overflow:hidden;"><img src="./assets/client-2-sm.jpeg" alt="Julian Vance" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;color:#A5A199;"><strong style="color:#F2EFE9;">Julian Vance</strong><br>High-Ticket Consulting</div>
+          </div>
+        </div>
+        <div data-reveal="" style="border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:1.8rem;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;background:#131316;">
+          <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:1.15rem;line-height:1.55;color:#E4E0D8;">"In two months we crossed $1.5M in tracked revenue&nbsp; qualified calls, not tire-kickers. Best marketing decision I've made in a decade."</div>
+          <div style="display:flex;align-items:center;gap:0.85rem;margin-top:1.6rem;">
+            <div style="width:48px;height:48px;flex:0 0 auto;border-radius:50%;overflow:hidden;"><img src="./assets/client-3-sm.jpeg" alt="David Reinhart" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+            <div style="font-family:'Archivo',sans-serif;font-size:0.85rem;color:#A5A199;"><strong style="color:#F2EFE9;">David Reinhart</strong><br>Executive Advisory</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GUARANTEE ===================== -->
+  <section style="background:#131316;border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:clamp(64px,9vh,110px) 24px;">
+    <div style="max-width:760px;margin:0 auto;text-align:center;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">The guarantee</div>
+      <div data-reveal="" style="margin-top:1.6rem;border:1px dashed rgba(198,161,90,0.45);border-radius:14px;padding:clamp(2.4rem,6vw,3.6rem) 1.5rem;">
+        <div style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(1.7rem,3.6vw,2.6rem);color:#F2EFE9;line-height:1.15;text-wrap:balance;">If you don't get your first booked call within <span style="color:#C6A15A;">30 days</span> of launch, we work for free until you do.</div>
+        <div style="font-family:'Archivo',sans-serif;font-size:0.95rem;color:#77746D;margin-top:1.1rem;max-width:52ch;margin-left:auto;margin-right:auto;"><br></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section style="padding:clamp(72px,11vh,130px) 24px;">
+    <div style="max-width:780px;margin:0 auto;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">FAQ</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.08;letter-spacing:-0.01em;margin:1.1rem 0 0;text-wrap:balance;">Questions coaches ask.</h2>
+      <div style="margin-top:clamp(32px,4vh,48px);border-top:1px solid rgba(255,255,255,0.1);">
+        <sc-for list="{{ faqs }}" as="item" hint-placeholder-count="5">
+          <div data-reveal="" style="border-bottom:1px solid rgba(255,255,255,0.1);">
+            <button onClick="{{ item.onToggle }}" style="width:100%;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.5rem 0;text-align:left;color:#F2EFE9;font-family:'Archivo',sans-serif;font-weight:500;font-size:clamp(1.05rem,2.2vw,1.25rem);">
+              <span style="display:flex;align-items:baseline;gap:0.9rem;"><span style="font-family:'Bodoni Moda',serif;font-size:1rem;color:#C6A15A;flex:0 0 auto;">{{ item.num }}</span><span>{{ item.q }}</span></span>
+              <span style="flex:0 0 auto;color:#C6A15A;font-size:1.5rem;line-height:1;font-weight:300;">{{ item.sign }}</span>
+            </button>
+            <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'Archivo',sans-serif;font-weight:300;color:#A5A199;font-size:1.02rem;line-height:1.65;padding:0 2.2rem 1.6rem 2.7rem;max-width:70ch;">{{ item.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+      <div data-reveal="" style="margin-top:2.6rem;">
+        <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.6rem;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:1.02rem;padding:1.05rem 2.1rem;border-radius:10px;text-decoration:none;box-shadow:0 14px 40px -12px rgba(198,161,90,0.55);transition:transform .25s ease;" style-hover="transform:translateY(-2px);">Book Your Free Audit<span style="font-size:1.1rem;transform:translateY(-1px);">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section style="padding:clamp(80px,13vh,150px) 24px;text-align:center;position:relative;">
+    <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(1000px,92vw);height:480px;background:radial-gradient(60% 70% at 50% 100%, rgba(198,161,90,0.12), transparent 70%);pointer-events:none;"></div>
+    <div style="max-width:820px;margin:0 auto;position:relative;">
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.78rem;letter-spacing:0.24em;text-transform:uppercase;color:#C6A15A;font-weight:600;">Last thing</div>
+      <h2 data-reveal="" style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.06;letter-spacing:-0.015em;margin:1.3rem auto 0;max-width:18ch;text-wrap:balance;">Once your niche is claimed, it's closed.</h2>
+      <p data-reveal="" style="font-family:'Archivo',sans-serif;font-weight:300;font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.6;color:#B9B5AC;margin:1.6rem auto 0;max-width:54ch;">One coach per niche, per market. When someone in your space signs, the door shuts&nbsp; for everyone else in it, competitors included. The only question is whether it's you or them.</p>
+      <div data-reveal="" style="margin-top:2.4rem;">
+        <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.6rem;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:1.08rem;padding:1.15rem 2.4rem;border-radius:10px;text-decoration:none;box-shadow:0 14px 40px -12px rgba(198,161,90,0.55);transition:transform .25s ease;" style-hover="transform:translateY(-2px);">Book Your Free Audit<span style="font-size:1.15rem;transform:translateY(-1px);">→</span></a>
+      </div>
+      <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.9rem;color:#77746D;margin-top:1.4rem;">Free audit · No commitment · We'll tell you if your niche is still open.</div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="border-top:1px solid rgba(255,255,255,0.08);padding:clamp(40px,6vh,64px) 24px;">
+    <div style="max-width:1080px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.4rem 2.4rem;align-items:center;justify-content:space-between;">
+      <div style="font-family:'Bodoni Moda',serif;font-size:1.15rem;color:#F2EFE9;letter-spacing:0.01em;">Axis Growth Systems</div>
+      <div style="display:flex;flex-wrap:wrap;gap:1.4rem;font-family:'Archivo',sans-serif;font-size:0.88rem;">
+        <a href="mailto:swapnil@axisgrowthsystems.com" style="color:#A5A199;" style-hover="color:#D9BA7B;">swapnil@axisgrowthsystems.com</a>
+        <a href="#" style="color:#A5A199;" style-hover="color:#D9BA7B;">Privacy</a>
+        <a href="#" style="color:#A5A199;" style-hover="color:#D9BA7B;">Terms</a>
+      </div>
+      <div style="font-family:'Archivo',sans-serif;font-size:0.82rem;color:#57544D;flex:1 1 100%;">© 2026 Axis Growth Systems. All rights reserved. Not affiliated with or endorsed by Meta Platforms, Inc.</div>
+    </div>
+  </footer>
+
+  <!-- ===================== STICKY BOTTOM BAR ===================== -->
+  <sc-if value="{{ showStickyBar }}" hint-placeholder-val="{{ true }}">
+  <div style="position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(15,15,16,0.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,0.1);padding:0.7rem 24px calc(0.7rem + env(safe-area-inset-bottom));">
+    <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;justify-content:space-between;">
+      <div style="display:flex;align-items:center;gap:0.9rem;min-width:0;">
+        <div style="flex:0 0 auto;width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,#8A6A24,#C6A15A);display:flex;align-items:center;justify-content:center;font-family:'Bodoni Moda',serif;font-weight:700;color:#141414;font-size:1.1rem;">A</div>
+        <div style="min-width:0;">
+          <div style="font-family:'Archivo',sans-serif;font-weight:600;font-size:0.95rem;color:#F2EFE9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">The Axis exclusivity system</div>
+          <div class="axis-sticky-sub" style="font-family:'Archivo',sans-serif;font-size:0.82rem;color:#A5A199;">One coach per niche · 3 open · free audit, no commitment</div>
+        </div>
+      </div>
+      <a href="https://calendly.com/axisgrowthsystems/new-meeting" target="_blank" rel="noopener" style="flex:0 0 auto;background:linear-gradient(180deg,#D9BA7B,#C6A15A);color:#141414;font-family:'Archivo',sans-serif;font-weight:700;font-size:0.95rem;padding:0.8rem 1.5rem;border-radius:8px;text-decoration:none;white-space:nowrap;">Book Free Audit →</a>
+    </div>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAnnouncementBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;showStickyBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { openFaq: null, vslPlaying: false };
+
+  get faqData() {
+    return [
+      { q: "My niche is small — does exclusivity even matter?", a: "It matters most. A smaller niche means fewer eyeballs to compete for — so exclusivity lets you own the entire addressable audience instead of splitting it with a competitor running the same hooks. You dominate faster, not slower. Small niches are where one-per-market wins hardest." },
+      { q: "I've been burned by an agency before.", a: "Most coaches we talk to have. Usually it's the same story: they were one of five clients in the same niche, quietly funding testing that got recycled next door. The audit is free and comes before you spend a dollar — you see exactly what we'd do and whether your niche is even open, with no commitment either way." },
+      { q: "How is this different from every other agency pitching me?", a: "One line: we take one coach per niche, per market. Not five. One. That single rule changes everything downstream — your ad account, your audience data, and your creative are never shared with a competitor, because we don't take a competitor. Everyone else optimizes for their portfolio. We optimize for you, because you're the only one." },
+      { q: "What do I need to have ready before starting?", a: "An offer that already converts on a sales call, and the capacity to take booked meetings. You bring the offer; we bring the pipeline. We'll confirm fit on the audit call before anything begins — no long onboarding, no busywork." },
+      { q: "What happens on the audit call?", a: "We check whether your niche and market are still open, look at your current pipeline, and show you exactly what exclusivity would get you — projected booked calls, the creative angle, and the timeline. No pitch-deck theatre. If we're not a fit, we'll tell you on the call." }
+    ];
+  }
+
+  componentDidMount() {
+    if (typeof IntersectionObserver === 'undefined') return;
+    requestAnimationFrame(() => {
+      const els = Array.from(document.querySelectorAll('[data-reveal]'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.style.opacity = '1';
+            e.target.style.transform = 'none';
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(el => {
+        el.style.transition = 'opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1)';
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(26px)';
+        io.observe(el);
+      });
+    });
+  }
+
+  renderVals() {
+    const faqs = this.faqData.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      num: String(i + 1).padStart(2, '0'),
+      open: this.state.openFaq === i,
+      sign: this.state.openFaq === i ? '\u2212' : '+',
+      onToggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? null : i }))
+    }));
+    return {
+      vslPlaying: this.state.vslPlaying,
+      vslNotPlaying: !this.state.vslPlaying,
+      playVsl: () => this.setState({ vslPlaying: true }),
+      showAnnouncementBar: this.props.showAnnouncementBar !== false,
+      showStickyBar: this.props.showStickyBar !== false,
+      faqs,
+      contrastBad: [
+        'Runs five coaches in your niche and calls it a client roster.',
+        'Recycles the hook you paid to discover onto your competitor.',
+        'Buries you in dashboards of clicks that never become calls.',
+        'Locks you into a retainer whether the calendar fills or not.',
+        "Optimizes for their portfolio  you're one line item of many."
+      ],
+      contrastGood: [
+        'Takes one coach per niche, per market. Full stop.',
+        'Builds creative for your offer, in your voice  never reused.',
+        'Delivers booked calls on your calendar, not click reports.',
+        'Puts a first-booked-call guarantee behind the work.',
+        "Optimizes for you  because you're the only one in your space."
+      ],
+      cardChecklist: [
+        'Dedicated Meta ad management — your account, managed end to end',
+        'Full niche + market exclusivity, in writing',
+        'Campaign live in 30 days',
+        'First booked calls inside 15 days of launch',
+        'Free pipeline audit before you commit a dollar'
+      ],
+      mechanismPoints: [
+        { num: '01', title: 'Dedicated ad account', desc: 'Your campaigns run in an account built for you alone  no shared assets, no cross-contamination.' },
+        { num: '02', title: 'Exclusivity agreement', desc: 'In writing: we will not take another coach in your niche and market. Full stop.' },
+        { num: '03', title: 'Creative built only for you', desc: 'Hooks and angles developed for your offer  never recycled to a competitor next door.' },
+        { num: '04', title: 'No shared audiences', desc: "Your audience data compounds for you alone. It's never split across competing campaigns." }
+      ],
+      offerItems: [
+        { title: 'Dedicated Meta ad management', desc: 'Built only for your business your account, your strategy, managed end to end.' },
+        { title: 'Full niche + market exclusivity', desc: "Once you're in, we close the door on everyone else in your space. Contractually." },
+        { title: 'Campaign live in 30 days', desc: 'From kickoff to launch creative, targeting, and tracking, ready to run.' },
+        { title: 'First booked calls inside 30 days of launch', desc: 'Qualified prospects on your calendar  not clicks, not raw leads.' },
+        { title: 'Free pipeline audit before you spend a dollar', desc: 'We map the opportunity and confirm your niche is open before any commitment.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
