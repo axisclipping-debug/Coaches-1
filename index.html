@@ -21,6 +21,15 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1349266090702243&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+ <script>
+document.addEventListener('click', function(e) {
+  const calendlyLink = e.target.closest('a[href*="calendly.com"]');
+
+  if (calendlyLink && typeof fbq === 'function') {
+    fbq('track', 'Lead');
+  }
+});
+</script>
 </head>
 <body>
 <x-dc>
