@@ -3,8 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#0F0F10"/>
+<text x="256" y="300" text-anchor="middle" font-family="Georgia,'Bodoni Moda',serif" font-style="italic" font-weight="700" font-size="220" fill="#C6A15A">A</text>
+</svg>
+</template>
 <script src="./support.js"></script>
-<!-- Meta Pixel Code -->
+</head>
+<body>
+<x-dc>
+<helmet>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;display=swap" rel="stylesheet">
+
+
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,14 +30,19 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1349266090702243');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1349266090702243&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
- <script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1349266090702243&ev=PageView&noscript=1"/>
+</noscript>
+
+
+<!-- CALENDLY LEAD TRACKING -->
+<script>
 document.addEventListener('click', function(e) {
   const calendlyLink = e.target.closest('a[href*="calendly.com"]');
 
@@ -30,13 +51,8 @@ document.addEventListener('click', function(e) {
   }
 });
 </script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&amp;display=swap" rel="stylesheet">
+
+
 <style>
   *{box-sizing:border-box;}
   html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
@@ -47,8 +63,11 @@ document.addEventListener('click', function(e) {
   body{padding-bottom:78px;}
   @media (max-width:760px){ .axis-topbar-contact{ display:none !important; } .axis-sticky-sub{ display:none !important; } }
 </style>
+
 <script src="./image-slot.js"></script>
+
 </helmet>
+
 <div style="background:#0F0F10;color:#F2EFE9;overflow-x:hidden;">
 
   <!-- ===================== TOP UTILITY BAR ===================== -->
@@ -66,6 +85,7 @@ document.addEventListener('click', function(e) {
   </div>
   </sc-if>
 
+  <sc-if value="{{ showLanding }}" hint-placeholder-val="{{ true }}">
   <!-- ===================== HERO ===================== -->
   <section style="padding:clamp(64px,10vh,110px) 24px clamp(40px,6vh,64px);position:relative;text-align:center;">
     <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(1100px,94vw);height:560px;background:radial-gradient(55% 60% at 50% 0%, rgba(198,161,90,0.12), transparent 70%);pointer-events:none;"></div>
@@ -97,7 +117,7 @@ document.addEventListener('click', function(e) {
         </sc-if>
         <sc-if value="{{ vslNotPlaying }}" hint-placeholder-val="{{ true }}">
           <div onClick="{{ playVsl }}" style="position:absolute;inset:0;cursor:pointer;">
-            <img src="./assets/hero-vsl-thumb-sm.jpeg" alt="Axis Growth Systems VSL" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+            <img src="./assets/hero-vsl-thumb-sm.jpeg" alt="Axis Growth Systems VSL" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">
             <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
               <div style="width:74px;height:74px;border-radius:50%;background:rgba(198,161,90,0.92);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px -8px rgba(198,161,90,0.7);">
                 <div style="width:0;height:0;border-top:13px solid transparent;border-bottom:13px solid transparent;border-left:22px solid #141414;margin-left:5px;"></div>
@@ -356,9 +376,14 @@ document.addEventListener('click', function(e) {
       <div data-reveal="" style="font-family:'Archivo',sans-serif;font-size:0.9rem;color:#77746D;margin-top:1.4rem;">Free audit · No commitment · We'll tell you if your niche is still open.</div>
     </div>
   </section>
-<!-- ===================== PRIVACY POLICY ===================== -->
-  <section id="privacy" style="border-top:1px solid rgba(255,255,255,0.08);background:#0C0C0D;padding:clamp(48px,7vh,84px) 24px;">
+
+  </sc-if>
+
+  <!-- ===================== PRIVACY POLICY (separate view) ===================== -->
+  <sc-if value="{{ showPrivacy }}" hint-placeholder-val="{{ false }}">
+  <section id="privacy" style="background:#0C0C0D;padding:clamp(40px,6vh,72px) 24px clamp(48px,7vh,84px);min-height:70vh;">
     <div style="max-width:760px;margin:0 auto;">
+      <div onClick="{{ goHome }}" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:'Archivo',sans-serif;font-size:0.88rem;color:#A5A199;cursor:pointer;margin-bottom:2.4rem;" style-hover="color:#D9BA7B;"><span>&larr;</span><span>Back to site</span></div>
       <div style="font-family:'Archivo',sans-serif;font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:#C6A15A;margin-bottom:1.1rem;">Legal</div>
       <h2 style="font-family:'Bodoni Moda',serif;font-weight:600;font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.1;letter-spacing:-0.01em;margin:0 0 0.8rem;">Privacy Policy</h2>
       <p style="font-family:'Archivo',sans-serif;font-size:0.88rem;color:#A5A199;margin:0 0 2.4rem;">Last updated: [25/06/25]</p>
@@ -434,6 +459,7 @@ document.addEventListener('click', function(e) {
       </div>
     </div>
   </section>
+  </sc-if>
 
   <!-- ===================== FOOTER ===================== -->
   <footer style="border-top:1px solid rgba(255,255,255,0.08);padding:clamp(40px,6vh,64px) 24px;">
@@ -441,7 +467,7 @@ document.addEventListener('click', function(e) {
       <div style="font-family:'Bodoni Moda',serif;font-size:1.15rem;color:#F2EFE9;letter-spacing:0.01em;">Axis Growth Systems</div>
       <div style="display:flex;flex-wrap:wrap;gap:1.4rem;font-family:'Archivo',sans-serif;font-size:0.88rem;">
         <a href="mailto:swapnil@axisgrowthsystems.com" style="color:#A5A199;" style-hover="color:#D9BA7B;">swapnil@axisgrowthsystems.com</a>
-        <a href="#" style="color:#A5A199;" style-hover="color:#D9BA7B;">Privacy</a>
+        <span onClick="{{ goPrivacy }}" style="color:#A5A199;cursor:pointer;" style-hover="color:#D9BA7B;">Privacy</span>
         <a href="#" style="color:#A5A199;" style-hover="color:#D9BA7B;">Terms</a>
       </div>
       <div style="font-family:'Archivo',sans-serif;font-size:0.82rem;color:#57544D;flex:1 1 100%;">© 2026 Axis Growth Systems. All rights reserved. Not affiliated with or endorsed by Meta Platforms, Inc.</div>
@@ -449,7 +475,7 @@ document.addEventListener('click', function(e) {
   </footer>
 
   <!-- ===================== STICKY BOTTOM BAR ===================== -->
-  <sc-if value="{{ showStickyBar }}" hint-placeholder-val="{{ true }}">
+  <sc-if value="{{ showStickyOnLanding }}" hint-placeholder-val="{{ true }}">
   <div style="position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(15,15,16,0.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,0.1);padding:0.7rem 24px calc(0.7rem + env(safe-area-inset-bottom));">
     <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:1rem;justify-content:space-between;">
       <div style="display:flex;align-items:center;gap:0.9rem;min-width:0;">
@@ -468,7 +494,7 @@ document.addEventListener('click', function(e) {
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;showAnnouncementBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;showStickyBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
 class Component extends DCLogic {
-  state = { openFaq: null, vslPlaying: false };
+  state = { openFaq: null, vslPlaying: false, view: 'landing' };
 
   get faqData() {
     return [
@@ -512,6 +538,11 @@ class Component extends DCLogic {
       onToggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? null : i }))
     }));
     return {
+      showLanding: this.state.view === 'landing',
+      showPrivacy: this.state.view === 'privacy',
+      showStickyOnLanding: this.props.showStickyBar !== false && this.state.view === 'landing',
+      goPrivacy: () => { this.setState({ view: 'privacy' }); window.scrollTo(0, 0); },
+      goHome: () => { this.setState({ view: 'landing' }); window.scrollTo(0, 0); },
       vslPlaying: this.state.vslPlaying,
       vslNotPlaying: !this.state.vslPlaying,
       playVsl: () => this.setState({ vslPlaying: true }),
