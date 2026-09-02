@@ -537,11 +537,8 @@ class Component extends DCLogic {
       onToggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? null : i }))
     }));
     return {
-      showLanding: this.state.view === 'landing',
-      showPrivacy: this.state.view === 'privacy',
-      showStickyOnLanding: this.props.showStickyBar !== false && this.state.view === 'landing',
-      goPrivacy: () => { this.setState({ view: 'privacy' }); window.scrollTo(0, 0); },
-      goHome: () => { this.setState({ view: 'landing' }); window.scrollTo(0, 0); },
+      showLanding: true,
+      showStickyOnLanding: this.props.showStickyBar !== false,
       vslPlaying: this.state.vslPlaying,
       vslNotPlaying: !this.state.vslPlaying,
       playVsl: () => this.setState({ vslPlaying: true }),
